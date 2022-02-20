@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import {
@@ -7,7 +7,6 @@ import {
   Routes,
   Route,
   Navigate,
-  useParams,
 } from "react-router-dom";
 
 function App() {

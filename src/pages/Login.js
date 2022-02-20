@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Login.module.scss";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 
 export default function Login(props) {
   const params = useParams();
