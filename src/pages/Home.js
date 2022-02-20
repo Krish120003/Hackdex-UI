@@ -7,7 +7,8 @@ export default function Home() {
   return (
     <>
       <div className={styles.sidebar}>
-        <img src={require("../assets/profileIcon.png")} alt="CSS" />
+        <img src={require("../assets/houseIcon.png")} alt="CSS" />
+        {/* <img src={require("../assets/profileIcon.png")} alt="CSS" /> */}
         <img src={require("../assets/videoIcon.png")} alt="CSS" />
         <img src={require("../assets/folderHd.png")} alt="CSS" />
         <img src={require("../assets/calenderIcon.png")} alt="CSS" />
