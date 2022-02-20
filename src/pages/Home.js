@@ -54,7 +54,7 @@ export default function Home() {
                 </div>
                 <div className={styles.contentText}>
                   <h2>Learn Flask in a Flash</h2>
-                  <p>Running 1030-1130</p>
+                  <p>Running 10:30-11:30</p>
                   <p>Covers Login Framework</p>
                 </div>
               </div>
@@ -71,7 +71,7 @@ export default function Home() {
                 </div>
                 <div className={styles.contentText}>
                   <h2>And Action! JavaScript Intro</h2>
-                  <p>Running 1300-1430</p>
+                  <p>Running 13:00-14:30</p>
                   <p>Covers Variables, Events & More!</p>
                 </div>
               </div>
