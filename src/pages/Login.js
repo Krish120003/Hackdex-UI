@@ -9,10 +9,10 @@ export default function Login(props) {
     const data = JSON.parse(atob(params.data));
     console.log(data);
     if (data.username) {
-      localStorage.setItem("e", data);
+      localStorage.setItem("e", JSON.stringify(data));
     }
   }
-  return localStorage.getItem("e") !== undefined ? (
+  return localStorage.getItem("e") === undefined ? (
     <>
       {/* <div dangerouslySetInnerHTML={iframe()}></div> */}
 

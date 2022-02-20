@@ -22,7 +22,7 @@ export default function Home() {
             {/* Title / Welcome */}
             <div>
               <h1>
-                <b>Hello,</b> {localStorage.getItem("e").username}
+                <b>Hello,</b> {JSON.parse(localStorage.getItem("e")).username}
               </h1>
               <p className={styles.subHead}>Welcome to StormHacks 2023!</p>
             </div>
