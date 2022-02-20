@@ -5,6 +5,7 @@
     background-color: #7289DA;
     width: 4em;
     height: 100vh;
+    line-height: 10em;
 }
 
 .centerC {
@@ -27,18 +28,21 @@
     width: 30%;
     font-size: 2.5em;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
     h1 {
         font-size: 1em;
         font-weight: normal;
         line-height: 0em;
         margin-top: 0.5em;
+        font-family: 'Red Hat Display', sans-serif;
+
 
     }
     h2 {
         font-weight: normal;
         font-size: 0.7em;
         margin: 0;
-
+        
     }
 }
 
@@ -69,7 +73,34 @@
     padding-bottom: 56.25%;
 }
 
+.miniVideoWrapper {
+    position: relative;
+    padding-bottom: 40%;
+    background-color: #F4F5FF;
+    border-radius: 0.5em;
+    max-height: 5em;
+    font-family: 'Roboto', sans-serif;
+    h2 {
+        text-indent: 5em;
+        font-size: 0.7em;
+        
+    }
+    p {
+        text-indent: 12em;
+        font-size: 0.4em;
+    }
+    
+    margin: 0.5em 0em;
+}
+
 .subHead{
     font-size: 0.5em;
-    
+    margin: 0;
+    line-height: 0.25em;
+    font-weight: 300;
+}
+
+
+.progressCard {
+
 }

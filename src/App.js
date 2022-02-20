@@ -7,6 +7,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/e" element={<p>Bruh</p>} />
       </Routes>
     </Router>
   );
