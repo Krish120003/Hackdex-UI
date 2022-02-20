@@ -229,3 +229,24 @@
     justify-content: center;
   }
 }
+
+.splitter {
+  // background-color: red;
+  display: flex;
+  justify-content: space-between;
+  #b {
+    padding: 1em;
+    img {
+      width: 2em;
+      height: 2em;
+    }
+    display: flex;
+  }
+}
+
+.imge {
+  overflow: hidden;
+  border-radius: 2em;
+  width: 3em;
+  height: 3em;
+}

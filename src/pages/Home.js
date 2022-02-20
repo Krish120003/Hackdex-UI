@@ -20,11 +20,20 @@ export default function Home() {
         <div className={styles.container}>
           <div className={styles.left}>
             {/* Title / Welcome */}
-            <div>
-              <h1>
-                <b>Hello,</b> {JSON.parse(localStorage.getItem("e")).username}
-              </h1>
-              <p className={styles.subHead}>Welcome to StormHacks 2023!</p>
+            <div className={styles.splitter}>
+              <div>
+                <h1>
+                  <b>Hello,</b> {JSON.parse(localStorage.getItem("e")).username}
+                </h1>
+                <p className={styles.subHead}>Welcome to StormHacks 2023!</p>
+              </div>
+              <div className={styles.imge}>
+                <img
+                  src={`https://cdn.discordapp.com/avatars/${
+                    JSON.parse(localStorage.getItem("e")).id
+                  }/${JSON.parse(localStorage.getItem("e")).avatar}.webp`}
+                ></img>
+              </div>
             </div>
 
             {/* Workshop Section */}
