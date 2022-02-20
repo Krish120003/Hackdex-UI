@@ -12,7 +12,8 @@ export default function Login(props) {
       localStorage.setItem("e", JSON.stringify(data));
     }
   }
-  return localStorage.getItem("e") === undefined ? (
+  return localStorage.getItem("e") === undefined ||
+    localStorage.getItem("e") === null ? (
     <>
       {/* <div dangerouslySetInnerHTML={iframe()}></div> */}
 
