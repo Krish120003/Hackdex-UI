@@ -36,7 +36,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className={styles.contentText}>
-                  <h2>Learn Flask in a Flash! Flash Intro</h2>
+                  <h2>Learn Flask in a Flash: Flash Intro</h2>
                   <p>Running 1030-1130</p>
                   <p>Covers Design Thinking and Common</p>
                   <p>Issues Covered by Futaba Sakura</p>
