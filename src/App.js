@@ -1,4 +1,5 @@
 import "./App.css";
+import React, { useEffect, useState } from "react";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import {
@@ -6,19 +7,16 @@ import {
   Routes,
   Route,
   Navigate,
+  useParams,
 } from "react-router-dom";
 
 function App() {
-  const isAuth = true;
   return (
     <Router>
       <Routes>
-        <Route
-          path="/"
-          exact
-          element={isAuth ? <Home /> : <Navigate to="/" />}
-        />
+        <Route path="/" exact element={true ? <Home /> : <Navigate to="/" />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/login/:data" element={<Login />} />
       </Routes>
     </Router>
   );

@@ -7,12 +7,13 @@ export default function Home() {
   return (
     <>
       <div className={styles.sidebar}>
-        {/* <img src={require("../assets/CSSImg.png")} alt="CSS" />
-        <img src={require("../assets/CSSImg.png")} alt="CSS" />
-        <img src={require("../assets/CSSImg.png")} alt="CSS" />
-        <img src={require("../assets/CSSImg.png")} alt="CSS" /> */}
+        <img src={require("../assets/profileIcon.png")} alt="CSS" />
+        <img src={require("../assets/videoIcon.png")} alt="CSS" />
+        <img src={require("../assets/folderHd.png")} alt="CSS" />
+        <img src={require("../assets/calenderIcon.png")} alt="CSS" />
+
         <div className={styles.settingsImg}>
-          {/* S<img src={require("../assets/CSSImg.png")} alt="CSS" /> */}
+          <img src={require("../assets/settingsIcon.png")} alt="CSS" />
         </div>
       </div>
       <div className={styles.centerC}>
@@ -21,7 +22,7 @@ export default function Home() {
             {/* Title / Welcome */}
             <div>
               <h1>
-                <b>Hello,</b> NAME
+                <b>Hello,</b> {localStorage.getItem("e").username}
               </h1>
               <p className={styles.subHead}>Welcome to StormHacks 2023!</p>
             </div>
@@ -32,27 +33,35 @@ export default function Home() {
               <div className={styles.contentCardWrapper}>
                 <div className={styles.contentImage}>
                   <div>
-                    <img src={require("../assets/CSSImg.png")} alt="CSS" />
+                    <img
+                      src={require("../assets/FlaskLogo.png")}
+                      height="90em"
+                      width="90em"
+                      alt="CSS"
+                    />
                   </div>
                 </div>
                 <div className={styles.contentText}>
-                  <h2>Learn Flask in a Flash: Flash Intro</h2>
+                  <h2>Learn Flask in a Flash</h2>
                   <p>Running 1030-1130</p>
-                  <p>Covers Design Thinking and Common</p>
-                  <p>Issues Covered by Futaba Sakura</p>
+                  <p>Covers Login Framework</p>
                 </div>
               </div>
               <div className={styles.contentCardWrapper}>
                 <div className={styles.contentImage}>
                   <div>
-                    <img src={require("../assets/CSSImg.png")} alt="CSS" />
+                    <img
+                      src={require("../assets/javaScriptImg.png")}
+                      height="90em"
+                      width="90em"
+                      alt="CSS"
+                    />
                   </div>
                 </div>
                 <div className={styles.contentText}>
-                  <h2>And Action! JavaScript Basics</h2>
-                  <p>Running 1030-1130</p>
-                  <p>Covers Design Thinking and Common</p>
-                  <p>Issues Covered by Futaba Sakura</p>
+                  <h2>And Action! JavaScript Intro</h2>
+                  <p>Running 1300-1430</p>
+                  <p>Covers Variables, Events & More!</p>
                 </div>
               </div>
             </div>
@@ -61,6 +70,10 @@ export default function Home() {
           </div>
           <div className={styles.right}>
             <h3>What's Happening?</h3>
+            <p>
+              Join the introduction to Flask, where you will learn about
+              creating log in, register, and post management for websites.
+            </p>
             <div className={styles.videoWrapper}>
               <iframe
                 src="https://www.youtube.com/embed/bdBokxiLAjs"
