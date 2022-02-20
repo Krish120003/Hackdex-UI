@@ -78,23 +78,55 @@
   padding-bottom: 56.25%;
 }
 
-.miniVideoWrapper {
+.contentCardWrapper {
   position: relative;
   padding-bottom: 40%;
   background-color: #f4f5ff;
   border-radius: 0.5em;
   max-height: 5em;
   font-family: "Roboto", sans-serif;
+  display: flex;
   h2 {
-    text-indent: 5em;
+    padding: 1em 0em 0.5em 0;
     font-size: 0.7em;
+    font-weight: 600;
   }
   p {
-    text-indent: 12em;
+    text-indent: 25%;
     font-size: 0.4em;
+    line-height: 0.4em;
   }
 
   margin: 0.5em 0em;
+}
+
+.contentImage {
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // width: 25%;
+  div {
+    height: 4em;
+    width: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div:after {
+    padding-bottom: 1em;
+    content: "";
+    display: block;
+  }
+}
+
+.contentText {
+  padding-left: 0.8em;
+  span {
+    margin-bottom: 0em;
+  }
 }
 
 .subHead {
