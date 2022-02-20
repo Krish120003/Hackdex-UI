@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+## Inspiration
+Our team is mainly composed of novice hackers, and we noticed that most hackathons aren’t inclusive; first time hackers often feel left out because they want to compete but do not have the skills to do so. If they do compete, they don’t fully have time to learn anything, they focus more on creating a working project than learning. Additionally, we noticed that the mentors are usually dormant -  their time isn’t utilized well with separations between the competitors and the learners.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## What it does
+HackDex is a platform that, in cooperation with ongoing hackathons, spotlights a topic for hackers of all experience to start and complete a project by the end of the program. It involves combining the learning and competitive parts of a hackathon together into one; first time hackers are given the opportunity to be introduced to a topic while still being able to compete in a fair content which accommodates their skill level.
 
-## Available Scripts
+## How we built it
+Some of our team had some previous experience with React, so we used React to build the front end of our web app. We wanted to challenge ourselves, so we learned and used Discord OAuth, ExpressJS and the Google Cloud Platform to build our first prototype.  
 
-In the project directory, you can run:
+## Challenges we ran into
+Finding an idea we all agreed upon that was also unique and productive
+Integrating discord login
+Routing pages on React
+HTTPS vs HTTP (why is SSL so hard to set up :[ )
+Hosting on Firebase. Why is it so difficult and complicated? 
+Firebase’s ridiculously slow deploy times
+Sleep deprivation
+Distractions due to utter disappointment after losing all the mini contests (dang tomato fruits :L)
+React website styling
+Environment variables with NodeJS are painful
+	
 
-### `npm start`
+## Accomplishments that we're proud of
+Successfully integrating the discord login
+Opening firewall ports on GCP VMs
+Setting up Google Firebase to automatically update our website
+Connecting a domain with Firebase
+Building out an actual project with something interesting
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## What we learned
+We learned about GCP VMs
+How to create and live update a domain
+How to properly use React and SCSS
+The large and vast difference between HTTPS and HTTP in regards to having proper running discord login connection.
+Basic OBS Recording
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## What's next for HackDex
+In the future, we can refine the UI, add a full IDE to view previous versions of your projects, a showcase to see what other participants have created, and external resources to pursue after the workshops are over.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
