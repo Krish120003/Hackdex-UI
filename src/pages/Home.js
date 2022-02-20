@@ -29,6 +29,7 @@ export default function Home() {
               </div>
               <div className={styles.imge}>
                 <img
+                  alt="discord pfp"
                   src={`https://cdn.discordapp.com/avatars/${
                     JSON.parse(localStorage.getItem("e")).id
                   }/${JSON.parse(localStorage.getItem("e")).avatar}.webp`}
