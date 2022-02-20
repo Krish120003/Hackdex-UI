@@ -1,13 +1,19 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
 //import assets from "../assets"
+import SubmissionCard from "../components/SubmissionCard";
 
 export default function Home() {
   return (
     <>
       <div className={styles.sidebar}>
-        <div>P . . . . . . V . . . . . . P . . . . . . C</div>
-        <div className={styles.settings}>S</div>
+        {/* <img src={require("../assets/CSSImg.png")} alt="CSS" />
+        <img src={require("../assets/CSSImg.png")} alt="CSS" />
+        <img src={require("../assets/CSSImg.png")} alt="CSS" />
+        <img src={require("../assets/CSSImg.png")} alt="CSS" /> */}
+        <div className={styles.settingsImg}>
+          {/* S<img src={require("../assets/CSSImg.png")} alt="CSS" /> */}
+        </div>
       </div>
       <div className={styles.centerC}>
         <div className={styles.container}>
@@ -21,47 +27,38 @@ export default function Home() {
             </div>
 
             {/* Workshop Section */}
-
-            {/* Progress Section */}
             <div>
-              {/* Section Info / Nav */}
-              <div></div>
-              {/* Section Card */}
-              <div className={styles.progressCard}>
-                <div>img</div>
-                <div>Content
-                  <h3>Title</h3>
-                  <span>
-                    {/* Icon 1 */}
-                    <p>4 Requirements</p>
-                  </span>
-                  <span>
-                    {/* Icon 1 */}
-                    <p>Due 2 AM</p>
-                  </span>
+              <h2>Upcoming Workshops</h2>
+              <div className={styles.contentCardWrapper}>
+                <div className={styles.contentImage}>
+                  <div>
+                    <img src={require("../assets/CSSImg.png")} alt="CSS" />
+                  </div>
+                </div>
+                <div className={styles.contentText}>
+                  <h2>Learn Flask in a Flash: Flash Intro</h2>
+                  <p>Running 1030-1130</p>
+                  <p>Covers Design Thinking and Common</p>
+                  <p>Issues Covered by Futaba Sakura</p>
+                </div>
+              </div>
+              <div className={styles.contentCardWrapper}>
+                <div className={styles.contentImage}>
+                  <div>
+                    <img src={require("../assets/CSSImg.png")} alt="CSS" />
+                  </div>
+                </div>
+                <div className={styles.contentText}>
+                  <h2>And Action! JavaScript Basics</h2>
+                  <p>Running 1030-1130</p>
+                  <p>Covers Design Thinking and Common</p>
+                  <p>Issues Covered by Futaba Sakura</p>
                 </div>
               </div>
             </div>
-
-            {/* <div>
-              <h2>Upcoming Workshops</h2>
-              <div className={styles.miniVideoWrapper}>
-                <h2>The Sight for Good Sites</h2>
-                <img src="javaScriptImg.png" alt="JS img" />
-                <p>Running 1030-1130</p>
-                <p>Covers Design Thinking and Common</p>
-                <p>Issues Covered by Futaba Sakura</p>
-              </div>
-              <div className={styles.miniVideoWrapper}>
-                <h2>And Action! JavaScript Basics</h2>
-              </div>
-            </div>
-            <div>
-              <h2>Your Progress</h2>
-              <div className={styles.miniVideoWrapper}></div>
-            </div> */}
+            {/* Progress Section */}
+            <SubmissionCard />
           </div>
-
           <div className={styles.right}>
             <h3>What's Happening?</h3>
             <div className={styles.videoWrapper}>

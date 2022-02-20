@@ -1,107 +1,231 @@
 .sidebar {
-    position: absolute;
-    top:0;
-    left:0;
-    background-color: #7289DA;
-    width: 4em;
-    height: 100vh;
-    line-height: 10em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #7289da;
+  width: 4em;
+  height: 100vh;
+  line-height: 10em;
+  img {
+    height: auto;
+    width: 3em;
+    margin: 12%;
+  }
+}
+
+.settingsImg {
+  margin-top: 300%;
 }
 
 .centerC {
-    height: 100%;
-    width: calc(100vw - 4em);
-    position: absolute;
-    left: 4em;
-    padding: 3em;
-    
+  height: 100%;
+  width: calc(100vw - 4em);
+  position: absolute;
+  left: 4em;
+  padding: 3em;
 }
 
 .container {
-    height: 100%;
-    // background-color: blueviolet;
-    display: flex;
-    justify-content: space-between;
+  height: 100%;
+  // background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
 }
 
 .left {
-    width: 30%;
-    font-size: 2.5em;
-    height: 100%;
-    font-family: 'Roboto', sans-serif;
-    h1 {
-        font-size: 1em;
-        font-weight: normal;
-        line-height: 0em;
-        margin-top: 0.5em;
-        font-family: 'Red Hat Display', sans-serif;
-
-
-    }
-    h2 {
-        font-weight: normal;
-        font-size: 0.7em;
-        margin: 0;
-        
-    }
+  width: 30%;
+  font-size: 2.5em;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  h1 {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 0em;
+    margin-top: 0.5em;
+    font-family: "Red Hat Display", sans-serif;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 0.7em;
+    margin: 0;
+  }
 }
 
 .right {
-    background-color: #F4F5FF;
-    border-radius: 2em;
-    width: 65%;
+  background-color: #f4f5ff;
+  border-radius: 2em;
+  width: 65%;
+  height: 100%;
+  padding: 2.5em;
+  h3 {
+    font-weight: normal;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    margin: 0;
+  }
+  iframe {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    padding: 2.5em;
-    h3 {
-        font-weight: normal;
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.5em;
-        margin: 0;
-    }
-    iframe {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+  }
 }
 
 .videoWrapper {
-    position: relative;
-    padding-bottom: 56.25%;
+  position: relative;
+  padding-bottom: 56.25%;
 }
 
-.miniVideoWrapper {
-    position: relative;
-    padding-bottom: 40%;
-    background-color: #F4F5FF;
-    border-radius: 0.5em;
-    max-height: 5em;
-    font-family: 'Roboto', sans-serif;
-    h2 {
-        text-indent: 5em;
-        font-size: 0.7em;
-        
-    }
-    p {
-        text-indent: 12em;
-        font-size: 0.4em;
-    }
-    
-    margin: 0.5em 0em;
+.contentCardWrapper {
+  position: relative;
+  padding-bottom: 40%;
+  background-color: #f4f5ff;
+  border-radius: 0.5em;
+  display: flex;
+  max-height: 5em;
+  margin: 0.5em 0em;
 }
 
-.subHead{
-    font-size: 0.5em;
-    margin: 0;
-    line-height: 0.25em;
-    font-weight: 300;
+.contentImage {
+  margin: 0.5em 0em 0.5em 0.5em;
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  div {
+    height: 4em;
+    width: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  div:after {
+    padding-bottom: 4em;
+    content: "";
+    display: block;
+  }
 }
 
+.contentText {
+  font-family: "Roboto", sans-serif;
+  padding-left: 0.8em;
+
+  span {
+    margin-bottom: 0em;
+  }
+  h2 {
+    padding: 1em 0em 0.5em 0;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  p {
+    text-indent: 10%;
+    font-size: 0.4em;
+    line-height: 0.4em;
+  }
+}
+
+.subHead {
+  font-size: 0.5em;
+  // margin: 0;
+  line-height: 0.25em;
+  font-weight: 300;
+}
 
 .progressCard {
+  display: flex;
+  background-color: #c6eaff;
+  border-radius: 0.6em;
+  padding: 1em;
+  font-size: 0.5em;
+}
+
+.progressCardImage {
+  background-color: #ffffff;
+  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // width: 25%;
+  div {
+    height: 4em;
+    width: 4em;
     display: flex;
-    background-color: #7289DA;
+    align-items: center;
+    justify-content: center;
+  }
+  div:after {
+    padding-bottom: 4em;
+    content: "";
+    display: block;
+  }
+}
+
+.progressCardContent {
+  padding-left: 1em;
+  h3 {
+    margin: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.4rem;
+  }
+  span {
+    // margin-top: 1em;
+    margin-bottom: 0;
+    p {
+      font-size: 0.8em;
+      margin: 0;
+    }
+  }
+}
+
+.progressTop {
+  span {
+    display: flex;
+    justify-content: space-between;
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+    }
+    p {
+      font-size: 1.5rem;
+      margin: 0;
+      font-weight: 600;
+      color: #7289da;
+    }
+  }
+}
+
+.progressBar {
+  width: 100%;
+  height: 0.4em;
+  margin: 0.4em 0em;
+  border-radius: 2em;
+  background-color: #eaedf9;
+  div {
+    width: 69%;
+    height: 100%;
+    border-radius: 2em;
+    background-color: #7289da;
+  }
+}
+
+.progressButton {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 0.2em;
+  span {
+    border-radius: 0.125em;
+    background-color: #d5dcf4;
+    width: 0.9em;
+    height: 0.9em;
+    margin-left: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
